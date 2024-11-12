@@ -1,16 +1,42 @@
-let currentPosition = 0;
-const quantity = 8; // Número total de itens
+let nextButton = document.getElementById("next");
+let prevButton = document.getElementById("prev");
+let carousel = document.querySelector(".carousel");
+let listHTML = document.querySelector(".carousel .list");
+let seeMoreButtons = document.querySelectorAll(".seeMore");
+let backButton = document.getElementById("back");
 
-function navigateSlider(direction) {
-  const slider = document.querySelector(".slider");
-  currentPosition += direction;
+nextButton.onclick = function () {
+  showSlider("next");
+};
+prevButton.onclick = function () {
+  showSlider("prev");
+};
+let unAcceppClick;
+const showSlider = (type) => {
+  nextButton.style.pointerEvents = "none";
+  prevButton.style.pointerEvents = "none";
 
-  // Impede a rotação completa, parando no início e no fim
-  if (currentPosition < 0) {
-    currentPosition = 0;
-  } else if (currentPosition >= quantity) {
-    currentPosition = quantity - 1;
+  carousel.classList.remove("next", "prev");
+  let items = document.querySelectorAll(".carousel .list .item");
+  if (type === "next") {
+    listHTML.appendChild(items[0]);
+    carousel.classList.add("next");
+  } else {
+    listHTML.prepend(items[items.length - 1]);
+    carousel.classList.add("prev");
   }
-
-  slider.style.transform = `perspective(1000px) rotateY(calc(-${currentPosition} * (360 / ${quantity}) * 1deg))`;
-}
+  clearTimeout(unAcceppClick);
+  unAcceppClick = setTimeout(() => {
+    nextButton.style.pointerEvents = "auto";
+    prevButton.style.pointerEvents = "auto";
+  }, 2000);
+};
+seeMoreButtons.forEach((button) => {
+  button.onclick = function () {
+    carousel.classList.remove("next", "prev");
+    carousel.classList.add("showDetail");
+  };
+});
+backButton.onclick = function () {
+  carousel.classList.remove("showDetail");
+};
