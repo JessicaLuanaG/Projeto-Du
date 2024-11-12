@@ -4,6 +4,17 @@ header {width: min(1200px, 90vw);margin: auto;height: 70px;display: flex;justify
     align-items: center;
 }
 
+header img {width: 30px;}
+header nav ul {display: flex;gap: 30px;}
+header a {text-decoration: none;color: #ffffff;}
+  
+
+
+/* Banner */
+main .banner {height: 100vh;display: flex;flex-direction: column;justify-content: center;align-items: center;gap: 20px;text-align: center;margin-top: -70px;
+}
+
+
 .ulFromTopBar li a{
     color: red;
     margin-left: 30px;
@@ -27,7 +38,7 @@ header {width: min(1200px, 90vw);margin: auto;height: 70px;display: flex;justify
 
 .second_title_name{
     font-size: 30px;
-    padding-left: 25px;
+    padding-left: 40px;
     margin-top: 10px;
 }
 
@@ -40,6 +51,70 @@ header {width: min(1200px, 90vw);margin: auto;height: 70px;display: flex;justify
 }
 
 
+
+/* FOOTER */
+.ulFooterLimp img{width: 25px;}
+.ulFooterLimp li{display: flex;align-items: center;}
+.ulFooterLimp a{font-size: 18px;}
+
+
+
+footer {
+    background-color: #0a7f21c8;
+    padding: 2px 0;
+  }
+  .container-footer {
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+  }
+  .row-footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .footer-col {
+    width: 50%;
+    padding: 0 15px;
+  }
+  .footer-col h4 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .footer-col ul {
+    list-style: none;
+  }
+  .footer-col ul li {
+    margin: 10px 0;
+  }
+  .footer-col ul li a {
+    font-size: 15px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover {
+    color: #cecdcd;
+    padding-left: 10px;
+  }
+  @media (max-width: 800px) {
+    .footer-col {
+      width: 50%;
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 600px) {
+    .footer-col {
+      width: 100%;
+    }
+  }
 
 
 
