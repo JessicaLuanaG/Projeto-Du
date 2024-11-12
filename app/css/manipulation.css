@@ -1,3 +1,22 @@
-.footerButton{height: 20vh;background-color: white;}
 
-.middleCarrosselPlayers{height: 80vh;background-color: white;}
+.section-slider{width: 100%;height: 100vh;}
+
+.middleCarrosselPlayers{height: auto;width: 400%;display: flex;}
+
+
+.middleCarrosselPlayers input{display: none;}
+
+.slider-box{width: 25%;height: auto;position: relative;text-align: center;}
+
+.slider-box img{
+    width: auto;
+    height: auto;
+}
+
+.nav-manual{position: absolute;width: 100%;margin-top: 35%;justify-content: center;}
+
+.manual-btn{border: 1px solid #ff0054;padding: 10px;border-radius: 50%;cursor: pointer;}
+
+
+
+.footerButton{height: 20vh;background-color: white;}
