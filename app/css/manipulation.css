@@ -1,22 +1,21 @@
+/* top bar */
 
-.section-slider{width: 100%;height: 100vh;}
-
-.middleCarrosselPlayers{height: auto;width: 400%;display: flex;}
-
-
-.middleCarrosselPlayers input{display: none;}
-
-.slider-box{width: 25%;height: auto;position: relative;text-align: center;}
-
-.slider-box img{
-    width: auto;
-    height: auto;
+header {width: min(1200px, 90vw);margin: auto;height: 70px;display: flex;justify-content: space-between;
+    align-items: center;
 }
 
-.nav-manual{position: absolute;width: 100%;margin-top: 35%;justify-content: center;}
+.ulFromTopBar li a{
+    color: red;
+    margin-left: 30px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 500;
+    font-family: "Nunito", sans-serif; 
+    letter-spacing: 1px;
+    font-size: 18px;
+}
 
-.manual-btn{border: 1px solid #ff0054;padding: 10px;border-radius: 50%;cursor: pointer;}
+.banner h1, .banner{
+    font-family: "Funnel Sans", sans-serif;
 
-
-
-.footerButton{height: 20vh;background-color: white;}
+}
