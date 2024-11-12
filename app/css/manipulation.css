@@ -19,3 +19,7 @@ header {width: min(1200px, 90vw);margin: auto;height: 70px;display: flex;justify
     font-family: "Funnel Sans", sans-serif;
 
 }
+
+.des{
+    color: #FFD700;
+}
