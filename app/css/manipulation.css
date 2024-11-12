@@ -15,18 +15,36 @@ header {width: min(1200px, 90vw);margin: auto;height: 70px;display: flex;justify
     font-size: 18px;
 }
 
-.banner h1, .banner{
-    font-family: "Funnel Sans", sans-serif;
+.banner h1, .banner{font-family: "Funnel Sans", sans-serif;}
 
-}
 
-.des p{
-    color: #FFD700;
-    font-family: "Josefin Sans", sans-serif;
+.title{height: 50px;display: flex;align-items: center;}
 
-}
 
 .title_Name{font-size: 50px;color: #E0E0E0 ;
     font-family: "Figtree", sans-serif;
-    padding-top: 20px;
 }
+
+.second_title_name{
+    font-size: 30px;
+    padding-left: 25px;
+    margin-top: 10px;
+}
+
+.third_title_name{
+    padding-left: 42px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #FFD700;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
