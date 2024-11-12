@@ -100,7 +100,8 @@
 
 .carousel.showDetail .list .item:nth-child(2) .detail .checkout {animation-delay: 1.6s;}
 
-.arrows {position: absolute; bottom: 10px; width: 1140px; max-width: 90%; display: flex; justify-content: space-between; left: 50%; transform: translateX(-50%);}
+.arrows {position: absolute; bottom: 118px; width: 1140px; max-width: 90%; display: flex;
+     justify-content: space-between; left: 50%; transform: translateX(-50%);}
 
 #prev, #next {width: 40px; height: 40px; border-radius: 50%; font-family: monospace; border: 1px solid #5555; font-size: large; bottom: 20%; left: 10%;}
 
