@@ -1,12 +1,17 @@
 /* top bar */
 
 header {
-  width: min(1200px, 90vw);
+  background-image: linear-gradient(to right, #0c755c, #095745);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: min(100%, 90vw);
   margin: auto;
   height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1000;
 }
 
 header img {
@@ -92,8 +97,9 @@ h1 {
   --item5-opacity: 0;
 }
 header {
+  padding: 10px;
   width: 1140px;
-  max-width: 90%;
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   margin: auto;
@@ -157,16 +163,3 @@ main .banner {
   color: #ffd700;
   font-family: "Josefin Sans", sans-serif;
 }
-
-
-
-.sdfg{
-  background-image: url("../../app/assets/img/dingo_bell.jpg");
-  background-size: cover; /* A imagem cobre toda a tela, ajustando seu tamanho */
-  background-position: center center; /* A imagem será centralizada */
-  background-repeat: no-repeat; /* A imagem não será repetida */
-  height: 100vh; 
-}
-
-
-
