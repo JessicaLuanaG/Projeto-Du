@@ -10,6 +10,102 @@ header a {text-decoration: none;color: #ffffff;}
   
 
 
+.banner button {
+    all: unset;
+    border: 1px solid #afaeae55;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom, #eee1, transparent, #eee1);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .banner button:hover {
+    background-color: #3f932c;
+    color: #ffffff;
+    box-shadow: 0 0 50px #3f932c;
+  }
+  h1 {
+    font-size: 4em;
+    font-weight: bold;
+    background-image: linear-gradient(to left, #3f932c, #90ff17);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    line-height: 1em;
+  }
+  
+  /* Navegação */
+  .nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .nav.prev {
+    left: 10%;
+  }
+  .nav.next {
+    right: 10%;
+  }
+  
+  
+  
+  :root {
+    --item1-transform: translateX(-100%) translateY(-5%) scale(1.5);
+    --item1-filter: blur(30px);
+    --item1-zIndex: 11;
+    --item1-opacity: 0;
+  
+    --item2-transform: translateX(0);
+    --item2-filter: blur(0px);
+    --item2-zIndex: 10;
+    --item2-opacity: 1;
+  
+    --item3-transform: translate(50%, 10%) scale(0.8);
+    --item3-filter: blur(10px);
+    --item3-zIndex: 9;
+    --item3-opacity: 1;
+  
+    --item4-transform: translate(90%, 20%) scale(0.5);
+    --item4-filter: blur(30px);
+    --item4-zIndex: 8;
+    --item4-opacity: 1;
+  
+    --item5-transform: translate(120%, 30%) scale(0.3);
+    --item5-filter: blur(40px);
+    --item5-zIndex: 7;
+    --item5-opacity: 0;
+  }
+  header {
+    width: 1140px;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    height: 50px;
+    align-items: center;
+  }
+  header .logo {
+    font-weight: bold;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
 /* Banner */
 main .banner {height: 100vh;display: flex;flex-direction: column;justify-content: center;align-items: center;gap: 20px;text-align: center;margin-top: -70px;
 }
@@ -52,69 +148,12 @@ main .banner {height: 100vh;display: flex;flex-direction: column;justify-content
 
 
 
-/* FOOTER */
-.ulFooterLimp img{width: 25px;}
-.ulFooterLimp li{display: flex;align-items: center;}
-.ulFooterLimp a{font-size: 18px;}
 
 
 
-footer {
-    background-color: #0a7f21c8;
-    padding: 2px 0;
-  }
-  .container-footer {
-    max-width: 1400px;
-    padding: 0 4%;
-    margin: auto;
-  }
-  .row-footer {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .footer-col {
-    width: 50%;
-    padding: 0 15px;
-  }
-  .footer-col h4 {
-    font-size: 20px;
-    color: white;
-    margin-bottom: 20px;
-    font-weight: 500;
-    position: relative;
-    text-transform: uppercase;
-  }
-  .footer-col ul {
-    list-style: none;
-  }
-  .footer-col ul li {
-    margin: 10px 0;
-  }
-  .footer-col ul li a {
-    font-size: 15px;
-    text-transform: capitalize;
-    color: white;
-    text-decoration: none;
-    font-weight: 300;
-    display: block;
-    transition: all 0.3s ease;
-  }
-  .footer-col ul li a:hover {
-    color: #cecdcd;
-    padding-left: 10px;
-  }
-  @media (max-width: 800px) {
-    .footer-col {
-      width: 50%;
-      margin-bottom: 30px;
-    }
-  }
-  @media (max-width: 600px) {
-    .footer-col {
-      width: 100%;
-    }
-  }
+
+
+
 
 
 
