@@ -22,4 +22,11 @@ header {width: min(1200px, 90vw);margin: auto;height: 70px;display: flex;justify
 
 .des p{
     color: #FFD700;
+    font-family: "Josefin Sans", sans-serif;
+
+}
+
+.title_Name{font-size: 50px;color: #E0E0E0 ;
+    font-family: "Figtree", sans-serif;
+    padding-top: 20px;
 }
