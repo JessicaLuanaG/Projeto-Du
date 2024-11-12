@@ -157,3 +157,16 @@ main .banner {
   color: #ffd700;
   font-family: "Josefin Sans", sans-serif;
 }
+
+
+
+.sdfg{
+  background-image: url("../../app/assets/img/dingo_bell.jpg");
+  background-size: cover; /* A imagem cobre toda a tela, ajustando seu tamanho */
+  background-position: center center; /* A imagem será centralizada */
+  background-repeat: no-repeat; /* A imagem não será repetida */
+  height: 100vh; 
+}
+
+
+
